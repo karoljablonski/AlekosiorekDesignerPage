@@ -286,12 +286,12 @@ div.back p.works>span {
 }
 
 div.back span.name {
-    animation: slide_from_right 1.5s 2s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: slide_from_right 1.8s 2s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 @keyframes slide_from_right {
     0% {
-        left: 1200px;
+        left: 2200px;
     }
 
     50% {
@@ -314,7 +314,7 @@ div.back span.name {
 div.back span.surname {
     top: 410px;
     color: #75bbd2;
-    animation: slide_from_right 1.5s 3s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: slide_from_right 1.8s 3s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 div.back p.works {
@@ -338,7 +338,7 @@ section .flexwrap {
 }
 
 .active {
-    margin-left: 1700px;
+    margin-left: 2700px;
 }
 
 .flexwrap .works {
