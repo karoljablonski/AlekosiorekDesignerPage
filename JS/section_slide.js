@@ -8,11 +8,11 @@ $(document).on("scroll", function() {
     const $scrollPosition = $(this).scrollTop();
     const $sectionFromTop = $section.offset().top;
     const $sectionHeight = $section.height();
-    console.log($section);
-    console.log($windowHeight);
-    console.log($scrollPosition);
-    console.log($sectionFromTop);
-    console.log($sectionHeight);
+    // console.log($section);
+    // console.log($windowHeight);
+    // console.log($scrollPosition);
+    // console.log($sectionFromTop);
+    // console.log($sectionHeight);
     //proba wykorzystania tych wszystkich constów:
     if($scrollPosition > $sectionFromTop + $sectionHeight - $windowHeight - 100) {
         $section.removeClass('active');

@@ -407,3 +407,29 @@ img.photo2 {
     transform: translate(20%, 45%);
     z-index: 1;
 }
+
+/* DIV'y DLA EVENT: MOUSEMOVE */
+
+div.mouse_circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+    z-index: -5;
+    pointer-events: none;
+}
+
+aside.socials:hover~div.mouse_circle,
+p.hello:hover~div.mouse_circle,
+nav:hover~div.mouse_circle {
+    width: 75px;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: .1s;
+    transform: translate(-50%, -50%);
+}
