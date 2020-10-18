@@ -408,7 +408,7 @@ img.photo2 {
     z-index: 1;
 }
 
-/* DIV'y DLA EVENT: MOUSEMOVE */
+/* DIV'y DLA EVENT: MOUSEMOVE oraz HOVER'y */
 
 div.mouse_circle {
     position: fixed;
@@ -432,4 +432,74 @@ nav:hover~div.mouse_circle {
     background-color: rgba(0, 0, 0, 0.2);
     transition: .1s;
     transform: translate(-50%, -50%);
+}
+
+/* about me modal feature */
+
+.blur {
+    filter: blur(5px);
+}
+
+.modal_active {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal_wrapper {
+    display: none;
+}
+
+article.about_me {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: #eee2d9;
+    border: 2px solid #021341;
+}
+
+div.close {
+    position: absolute;
+    top: -12.5px;
+    right: -12.5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #021341;
+    cursor: pointer;
+}
+
+div.close i {
+    color: #eee2d9;
+    font-size: 20px;
+    /* line-height: 25px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+article.about_me span {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-family: 'bw_helderw3_extrabold';
+    font-size: 30px;
+    color: #021341;
+}
+
+article.about_me p {
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    width: 80%;
+    line-height: 2;
+    font-family: 'bw_helderw3_light';
+    color: #75bbd2;
 }
